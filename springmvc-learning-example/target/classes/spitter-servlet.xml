@@ -12,7 +12,14 @@
 		http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd
 		http://www.springframework.org/schema/tx 
 		http://www.springframework.org/schema/tx/spring-tx.xsd ">
-
+	<!-- <bean class="org.springframework.web.servlet.view.tiles3.TilesViewResolver"></bean>
+	<bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>/WEB-INF/views/**/views.xml</value>
+			</list>
+		</property>
+	</bean> -->
 	<mvc:resources location="/resources/" mapping="/resources/**"/>
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
