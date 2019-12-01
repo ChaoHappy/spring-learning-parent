@@ -17,6 +17,14 @@
 	　　<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	
+	<context-param>
+    	<param-name>webAppRootKey</param-name>
+    	<param-value>ebop-server.root</param-value>
+	</context-param>
+    <listener>
+        <listener-class>org.springframework.web.util.WebAppRootListener</listener-class>
+    </listener>
+	
   <servlet>
   	<!-- 默认情况下DispatcherServlet加载时会从基于这个servlet名字的XML文件中加载Spring应用上下文，例如：spitter-servlet.xml -->
   	<servlet-name>spitter</servlet-name>

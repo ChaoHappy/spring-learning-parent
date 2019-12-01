@@ -11,7 +11,7 @@
 <h2>spitter 登录首页</h2>
 <a>登录名：</a>${spitter}
 <c:forEach  var="spittle" items="${spittles}">
-	${spittle}
+	<a>标题：</a>${spittle}
 </c:forEach>
 </body>
 </html>

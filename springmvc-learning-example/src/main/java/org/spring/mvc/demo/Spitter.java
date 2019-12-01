@@ -1,9 +1,14 @@
 package org.spring.mvc.demo;
 
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
 public class Spitter {
 	
 	private String fullName;
 	
+	@Size(min=3,max=20,message="用户名必须在3~20长度之间")
+	@Pattern(regexp="^[a-zA-Z0-9]+$",message="用户名格式不正确")
 	private String username;
 	
 	private String password;
